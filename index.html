@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prometheus GovAI</title>
+  <title>Promptheus GovAI</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="font-sans">
@@ -15,11 +15,13 @@
         <h1 class="text-xl font-semibold text-[#f5f1eb]">Prometheus GovAI</h1>
       </div>
       <nav class="space-x-6 text-[#f5f1eb]">
-        <a href="index.html" class="hover:text-[#ff7a00]">Home</a>
-        <a href="medical-prompts.html" class="hover:text-[#ff7a00]">Medical Transfer Technology Prompts</a>
-        <a href="general-prompts.html" class="hover:text-[#ff7a00]">General Prompts</a>
-        <a href="forum-prompts.html" class="hover:text-[#ff7a00]">Forum Prompts</a>
-      </nav>      
+        <a href="#home" class="hover:text-[#ff7a00]">Home</a>
+        <a href="#about" class="hover:text-[#ff7a00]">About</a>
+        <a href="#use-cases" class="hover:text-[#ff7a00]">Use Cases</a>
+        <a href="#resources" class="hover:text-[#ff7a00]">Resources</a>
+        <a href="#faq" class="hover:text-[#ff7a00]">FAQ</a>
+        <a href="#contact" class="hover:text-[#ff7a00]">Contact</a>
+      </nav>
     </div>
   </header>
 
@@ -41,26 +43,57 @@
     </div>
   </section>
 
-  <!-- Use Cases -->
-  <section id="use-cases" class="py-16 px-4">
-    <div class="max-w-5xl mx-auto">
-      <h3 class="text-3xl font-semibold mb-8">Use Cases</h3>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-[#e8e3da] p-6 rounded-xl shadow">
-          <h4 class="text-xl font-bold mb-2">Public Health</h4>
-          <p>Predict disease outbreaks, optimize resource allocation, and analyze health trends using AI.</p>
+<!-- Use Cases -->
+<section id="use-cases" class="py-16 px-4 relative">
+  <div class="max-w-5xl mx-auto">
+    <h3 class="text-3xl font-semibold mb-8">Use Cases</h3>
+    <div class="relative">
+      <!-- Top 3 Boxes -->
+      <div class="grid md:grid-cols-3 gap-6 z-10 relative">
+        <div id="box1" class="bg-[#e8e3da] p-6 rounded-xl shadow text-center">
+          <h4 class="text-xl font-bold mb-2">Deep Research</h4>
+          <p>Collect and organize information from hundreds of sources in minutes, displayed in an easily consumable way.</p>
         </div>
-        <div class="bg-[#e8e3da] p-6 rounded-xl shadow">
-          <h4 class="text-xl font-bold mb-2">National Security</h4>
-          <p>Improve threat detection and cyber defense capabilities through machine learning models.</p>
+        <div id="box2" class="bg-[#e8e3da] p-6 rounded-xl shadow text-center">
+          <h4 class="text-xl font-bold mb-2">Document Reading and Analysis</h4>
+          <p>Read and process all-size documents with specific conditions and tasks in mind.</p>
         </div>
-        <div class="bg-[#e8e3da] p-6 rounded-xl shadow">
-          <h4 class="text-xl font-bold mb-2">Administrative Efficiency</h4>
-          <p>Use automation to streamline HR, finance, and citizen service workflows.</p>
+        <div id="box3" class="bg-[#e8e3da] p-6 rounded-xl shadow text-center">
+          <h4 class="text-xl font-bold mb-2">Critical Thinking</h4>
+          <p>Uses its learned knowledge to create complex and well-sourced predictions, estimates, or conclusions.</p>
+        </div>
+      </div>
+
+      <!-- Arrows -->
+      <div class="hidden md:block">
+        <!-- Positioning container -->
+        <div class="absolute left-1/2 top-[190px] w-full transform -translate-x-1/2 pointer-events-none">
+          <!-- Arrow 1 -->
+          <svg class="absolute left-[10%] top-0 w-8 h-8 text-gray-500 rotate-90" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m0 0l-6-6m6 6l6-6" />
+          </svg>
+          <!-- Arrow 2 -->
+          <svg class="absolute left-1/2 top-0 w-8 h-8 text-gray-500 -translate-x-1/2 rotate-90" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m0 0l-6-6m6 6l6-6" />
+          </svg>
+          <!-- Arrow 3 -->
+          <svg class="absolute right-[10%] top-0 w-8 h-8 text-gray-500 rotate-90" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m0 0l-6-6m6 6l6-6" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Bottom Box -->
+      <div class="mt-32 md:mt-20 flex justify-center z-10 relative">
+        <div class="bg-[#e8e3da] p-6 rounded-xl shadow w-full max-w-md text-center">
+          <h4 class="text-xl font-bold mb-2">Integrated Decision-Making</h4>
+          <p>The combined insights from research, analysis, and reasoning power streamlined, supporting actionable decisions.</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Resources -->
   <section id="resources" class="bg-[#0b2c3c] py-16 px-4 text-[#f5f1eb]">
@@ -80,8 +113,15 @@
       <h3 class="text-3xl font-semibold mb-4">Frequently Asked Questions</h3>
       <div class="space-y-4">
         <div>
+          <h4 class="font-bold">Is it cheating to use AI?</h4>
+          <p class="text-[#3a3a3a]">No, AI is like having an intern, who does not get distracted. It can do tons of grunt and busy work for you, and you do not need to pay it.
+            However, just like an intern it needs clear instructions. The more time you put into crafting your prompt, the better result you will receive.
+          </p>
+        </div>
+        <div>
           <h4 class="font-bold">Is AI secure and private?</h4>
-          <p class="text-[#3a3a3a]">Yes—when deployed correctly. It’s crucial to work with vetted tools and enforce strong data protection policies.</p>
+          <p class="text-[#3a3a3a]">Yes—when deployed correctly. It’s crucial to work with vetted tools and enforce strong data protection policies. 
+            Systems like Ask Sage have been specially developed under government contract to ensure security.</p>
         </div>
         <div>
           <h4 class="font-bold">Can employees use AI without coding?</h4>
@@ -102,28 +142,6 @@
         <textarea rows="4" placeholder="Your Message" class="w-full p-3 rounded bg-[#f5f1eb] text-[#0b2c3c] placeholder-gray-500"></textarea>
         <button type="submit" class="bg-[#ff7a00] px-6 py-2 rounded text-white hover:bg-orange-500">Send</button>
       </form>
-    </div>
-  </section>
-
-  <!-- Prompt Tabs -->
-  <section id="medical-prompts" class="py-16 px-4">
-    <div class="max-w-4xl mx-auto">
-      <h3 class="text-3xl font-semibold mb-4">Medical Transfer Technology Prompts</h3>
-      <p class="text-[#3a3a3a]">Here you can add curated prompts specifically designed to help with medical technology use cases, such as EMR transfers, patient communication, and data translation.</p>
-    </div>
-  </section>
-
-  <section id="general-prompts" class="bg-[#e8e3da] py-16 px-4">
-    <div class="max-w-4xl mx-auto">
-      <h3 class="text-3xl font-semibold mb-4">General Prompts</h3>
-      <p class="text-[#3a3a3a]">This section includes general-purpose prompts that can be used across departments to summarize documents, draft reports, or respond to inquiries.</p>
-    </div>
-  </section>
-
-  <section id="forum-prompts" class="py-16 px-4">
-    <div class="max-w-4xl mx-auto">
-      <h3 class="text-3xl font-semibold mb-4">Forum Prompts</h3>
-      <p class="text-[#3a3a3a]">Explore prompts tailored for community engagement, knowledge sharing, and forum moderation within government platforms.</p>
     </div>
   </section>
 
