@@ -16,23 +16,120 @@
       </div>
       <nav class="space-x-6 text-[#f5f1eb]">
         <a href="index.html" class="hover:text-[#ff7a00]">Home</a>
-        <a href="general-prompts.html" class="hover:text-[#ff7a00]">General Prompts</a>
         <a href="T2-prompts.html" class="hover:text-[#ff7a00]">Transfer Technology Prompts</a>
+        <a href="general-prompts.html" class="hover:text-[#ff7a00]">General Prompts</a>
         <a href="forum-prompts.html" class="hover:text-[#ff7a00]">Forum Prompts</a>
-      </nav>      
+      </nav> 
     </div>
   </header>
 
-  <!-- Prompt Tabs -->
-  <section id="general-prompts" class="py-16 px-4">
+  <!-- Home Section -->
+  <section id="home" class="py-20 px-4 text-center">
+    <h2 class="text-4xl font-bold mb-4">Empowering Government with AI</h2>
+    <p class="text-lg text-[#3a3a3a] max-w-2xl mx-auto">
+      Learn how artificial intelligence can streamline workflows, enhance services, and support informed decision-making across federal, state, and local agencies.
+    </p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="bg-[#e8e3da] py-16 px-4">
     <div class="max-w-4xl mx-auto">
-      <h3 class="text-3xl font-semibold mb-4">Prompts for General Tasks</h3>
-      <p class="text-[#3a3a3a]">Here you can view curated prompts specifically designed to help with medical technology use cases, such as EMR transfers, patient communication, and data translation.</p>
-      <a href="connection-score-and-recommendation-rating-prompt.pdf" target="_blank" class="text-[#ff7a00] underline hover:text-orange-500 mt-4 inline-block">Download the Network Scoring Prompt (PDF)</a>
+      <h3 class="text-3xl font-semibold mb-4">About AI in Government</h3>
+      <p>
+        Artificial Intelligence is transforming how public servants approach data, policy, and service delivery. From predictive analytics in public health to intelligent automation in administration, AI is a powerful tool for modern governance.
+      </p>
     </div>
   </section>
 
-  
+<!-- Use Cases -->
+<section id="use-cases" class="py-16 px-4 relative">
+  <div class="max-w-5xl mx-auto">
+    <h3 class="text-3xl font-semibold mb-8">Use Cases</h3>
+    <div class="relative">
+      <!-- Top 3 Boxes -->
+      <div class="grid md:grid-cols-3 gap-6 z-10 relative">
+        <div id="box1" class="bg-[#e8e3da] p-6 rounded-xl shadow text-center">
+          <h4 class="text-xl font-bold mb-2">Deep Research</h4>
+          <p>Collect and organize information from hundreds of sources in minutes, displayed in an easily consumable way.</p>
+        </div>
+        <div id="box2" class="bg-[#e8e3da] p-6 rounded-xl shadow text-center">
+          <h4 class="text-xl font-bold mb-2">Document Reading and Analysis</h4>
+          <p>Read and process all-size documents with specific conditions and tasks in mind.</p>
+        </div>
+        <div id="box3" class="bg-[#e8e3da] p-6 rounded-xl shadow text-center">
+          <h4 class="text-xl font-bold mb-2">Critical Thinking</h4>
+          <p>Uses its learned knowledge to create complex and well-sourced predictions, estimates, or conclusions.</p>
+        </div>
+      </div>
+
+      <!-- Arrows -->
+      <div class="hidden md:block">
+        <!-- Positioning container -->
+        <div class="absolute left-1/2 top-[190px] w-full transform -translate-x-1/2 pointer-events-none">
+          <!-- Arrow 1 -->
+          <svg class="absolute left-[20%] top-0 w-8 h-24 text-gray-500 rotate-[300deg]" fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 24 60">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v56m0 0l-6-6m6 6l6-6" />
+          </svg>
+          <!-- Arrow 2 -->
+          <svg class="absolute left-1/2 top-0 w-8 h-16 text-gray-500 -translate-x-1/2 rotate-[0deg]" fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 24 100">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v56m0 0l-6-6m6 6l6-6" />
+          </svg>
+          <!-- Arrow 3 -->
+          <svg class="absolute right-[20%] top-0 w-8 h-24 text-gray-500 rotate-[60deg]" fill="none" stroke="currentColor" stroke-width="4" viewBox="0 0 24 60">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v56m0 0l-6-6m6 6l6-6" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Bottom Box -->
+      <div class="mt-32 md:mt-20 flex justify-center z-10 relative">
+        <div class="bg-[#e8e3da] p-6 rounded-xl shadow w-full max-w-md text-center">
+          <h4 class="text-xl font-bold mb-2">Integrated Decision-Making</h4>
+          <p>The combined insights from research, analysis, and reasoning power streamlined, supporting actionable decisions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="resources" class="bg-[#0b2c3c] py-16 px-4 text-[#f5f1eb]">
+  </section>
+
+  <!-- Resources -->
+  <section id="resources" class="bg-[#0b2c3c] py-16 px-4 text-[#f5f1eb]">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-3xl font-semibold mb-4">Guides & Resources</h3>
+      <ul class="list-disc list-inside">
+        <li>How to Use ChatGPT for Document Drafting</li>
+        <li>AI and Data Ethics in Government</li>
+        <li>Beginner’s Guide to Automating Reports with AI</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-16 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-3xl font-semibold mb-4">Frequently Asked Questions</h3>
+      <div class="space-y-4">
+        <div>
+          <h4 class="font-bold">Is it cheating to use AI?</h4>
+          <p class="text-[#3a3a3a]">No, AI is like having an intern, who does not get distracted. It can do tons of grunt and busy work for you, and you do not need to pay it.
+            However, just like an intern it needs clear instructions. The more time you put into crafting your prompt, the better result you will receive.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-bold">Is AI secure and private?</h4>
+          <p class="text-[#3a3a3a]">Yes—when deployed correctly. It’s crucial to work with vetted tools and enforce strong data protection policies. 
+            Systems like Ask Sage have been specially developed under government contract to ensure security.</p>
+        </div>
+        <div>
+          <h4 class="font-bold">Can employees use AI without coding?</h4>
+          <p class="text-[#3a3a3a]">Absolutely. Many no-code tools allow users to generate reports, analyze data, or draft content using simple interfaces.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Contact -->
   <section id="contact" class="bg-[#e8e3da] py-16 px-4">
@@ -54,8 +151,3 @@
   </footer>
 </body>
 </html>
-
-
-
-
-
